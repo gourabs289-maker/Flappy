@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Escape</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+        <div id="ui-layer">
+            <div id="score-display">Score: <span id="score">0</span></div>
+            <button id="pause-btn">Pause</button>
+
+            <div id="game-over-screen" class="hidden overlay">
+                <h2>Game Over!</h2>
+                <p>Final Score: <span id="final-score">0</span></p>
+                <button id="restart-btn">Restart</button>
+            </div>
+
+            <div id="start-screen" class="overlay">
+                <h2>Flappy Escape</h2>
+                <p>Press Space or Click to Fly</p>
+                <button id="start-btn">Start Game</button>
+            </div>
+
+            <div id="pause-screen" class="hidden overlay">
+                <h2>Paused</h2>
+                <button id="resume-btn">Resume</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
